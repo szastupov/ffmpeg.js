@@ -7,14 +7,8 @@ POST_JS_SYNC = build/post-sync.js
 POST_JS_WORKER = build/post-worker.js
 
 COMMON_FILTERS = aresample scale crop overlay
-COMMON_DEMUXERS = matroska ogg avi mov flv mpegps image2 mp3 concat
-COMMON_DECODERS = \
-	vp8 vp9 theora \
-	mpeg2video mpeg4 h264 hevc \
-	png mjpeg \
-	vorbis opus \
-	mp3 ac3 aac \
-	ass ssa srt webvtt
+COMMON_DEMUXERS = concat pcm_f32be pcm_f32le pcm_s16be pcm_s16le
+COMMON_DECODERS = pcm_f32be pcm_f32le pcm_s16be pcm_s16le
 
 WEBM_MUXERS = webm ogg null image2
 WEBM_ENCODERS = libvpx_vp8 libopus mjpeg
